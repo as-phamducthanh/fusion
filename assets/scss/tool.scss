@@ -1,0 +1,47 @@
+.tools {
+  .active {
+    position: relative;
+    outline: 2px solid #00ADB5 !important;
+    width: fit-content;
+
+    svg[data-pos='top-left'] {
+      position:
+        absolute;
+      transform: rotate(180deg);
+      left: 0;
+      top: 0;
+      color: #00adb5;
+      cursor: nw-resize;
+    }
+
+    svg[data-pos='top-right'] {
+      position:
+        absolute;
+      transform: rotate(270deg);
+      right: 0px;
+      top: 0px;
+      color:
+        #00adb5;
+      cursor: ne-resize;
+    }
+
+    svg[data-pos='bottom-right'] {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: #00adb5;
+      cursor:
+        nw-resize;
+    }
+
+    svg[data-pos='bottom-left'] {
+      position: absolute;
+      transform: rotate(90deg);
+      left: 0;
+      bottom: 0;
+      color: #00adb5;
+      cursor:
+        ne-resize;
+    }
+  }
+}

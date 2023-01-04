@@ -1,0 +1,62 @@
+html {
+  font-family: 'Roboto', Arial, sans-serif !important;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+}
+
+input,
+label,
+textarea,
+select {
+  font-size: 13px !important;
+  width: 100% !important;
+  border-radius: 2px !important;
+}
+
+input[type='color'] {
+  padding: 0px !important;
+}
+
+details {
+  color: white;
+  font-size: 14px;
+
+  &:not(:first-child) {
+    margin-left: 0.6rem;
+  }
+
+  span {
+    font-size: 1em !important;
+    font-weight: initial !important;
+    padding: 4px 8px !important;
+  }
+
+  div {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  summary {
+    margin: 5px 0px;
+  }
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #4a4a4a;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: #4a4a4a;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #696969;
+}

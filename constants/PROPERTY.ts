@@ -1,0 +1,27 @@
+export const PROPERTY = {
+  TEXT: ['href', 'lang', 'title', 'alt', 'src', 'bgImage', 'class', 'text'],
+  DROPDOWN: [
+    'fontWeight',
+    'fontFamily',
+    'textDecoration',
+    'textTransform',
+    'textAlign',
+    'dir',
+    'axis',
+    'tag',
+    'align',
+    'blockType',
+    'valign',
+    'responsive',
+  ],
+  NUMBER: [
+    'fontSize',
+    'height',
+    'width',
+    'lineHeight',
+    'count',
+    'borderRadius',
+  ],
+  COLOR: ['color', 'bgColor', 'tempBgColor', 'bodyBgColor'],
+  FILE: ['file'],
+} as const

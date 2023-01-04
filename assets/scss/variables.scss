@@ -1,0 +1,25 @@
+// $main-background: radial-gradient(circle, rgba(42,245,255,1) 0%, rgba(195,33,165,1) 100%);
+$main-background: linear-gradient(135deg, rgba(95, 0, 127, .8) 0%, rgba(42, 245, 255, 0) 80%),
+  linear-gradient(315deg, rgba(35, 53, 190, .8) 0%, rgba(42, 245, 255, 0) 80%);
+
+$default: #ffffff;
+$background: rgb(34 40 49);
+$surface: rgb(57 62 70);
+$primary: rgb(0 173 181);
+$secondary: rgb(238 238 238);
+
+$background-content: #3f444d;
+$border: #525050;
+$surface-hovered: rgba(255, 255, 255, 4%);
+$surface-focused: rgba(255, 255, 255, 12%);
+$surface-pressed: rgba(255, 255, 255, 10%);
+$surface-dragged: rgba(255, 255, 255, 8%);
+
+
+$colors: (
+  blank: $default,
+  primary: $primary,
+  secondary: $secondary,
+  background: $background,
+  surface: $surface,
+);

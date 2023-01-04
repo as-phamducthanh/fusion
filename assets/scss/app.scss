@@ -1,0 +1,39 @@
+.app {
+  background-color: $background;
+  overflow: hidden;
+
+  &__container {
+    height: calc(100vh - 43px);
+    margin: 43px 288px 0px 0px;
+  }
+
+  &__sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 288px;
+    background-color: $surface;
+  }
+
+  &__navbar {
+    display: inline-grid;
+    grid-template-columns: 1fr auto 1fr;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 288px);
+    height: 43px;
+    background-color: $surface;
+    padding: 0px 10px 0px 10px;
+  }
+
+  &__frame {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: none;
+    overflow-y: hidden;
+  }
+}

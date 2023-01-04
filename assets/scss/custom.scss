@@ -1,0 +1,148 @@
+.custom {
+  &__tabs {
+    width: 100%;
+
+    .nav-tabs {
+      height: 43px;
+      border: none;
+      align-items: end;
+    }
+
+    .nav-item {
+      flex-grow: 1;
+      text-align: center;
+      max-width: 90px;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      padding: 6px;
+      border-radius: 0px;
+      width: 90px;
+      border-bottom: none !important;
+      color: #a0a0a0 !important;
+      column-gap: 10px;
+      border: none !important;
+
+      &:first-of-type {
+        border-right: 1px solid $border !important;
+      }
+
+      &.active {
+        background-color: $surface-focused !important;
+        color: $secondary !important;
+
+      }
+    }
+
+    .tab-content {
+      background-color: $surface-focused !important;
+      height: calc(100vh - 44px);
+      border-left: 1px solid $border !important;
+      border-bottom: 1px solid $border !important;
+      padding: 1rem;
+      overflow: auto;
+    }
+
+    fieldset {
+      margin-bottom: 0 !important;
+
+      legend {
+        color: white !important;
+        font-weight: 400;
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__nav {
+    height: 40px;
+    width: 100%;
+    padding: 5px 0px 5px 5px;
+    background-color: $surface;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      color: $secondary;
+      column-gap: 10px;
+
+      a {
+        color: inherit;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        padding: 8px;
+        background: transparent !important;
+        border: none !important;
+        border-radius: 10%;
+        box-shadow: none !important;
+        color: $secondary !important;
+
+        svg {
+          font-size: 1rem !important;
+        }
+
+        &:active {
+          transform: scale(1.05);
+        }
+
+        &:hover {
+          background: rgba(255, 255, 255, 8%) !important;
+        }
+
+        &.active {
+          background: $background !important;
+          box-shadow: 0px 0px 1px 0px $default !important;
+        }
+      }
+    }
+
+    &-border {
+      padding: 0px 8px;
+      border-right: solid 1px $border;
+      border-left: solid 1px $border;
+    }
+
+    &-modal {
+      button {
+        min-width: 80px;
+      }
+    }
+  }
+}
+
+@each $colorname,
+$color in $colors {
+  .fusion-btn-#{$colorname} {
+    background: $color !important;
+    font-weight: 100 !important;
+    border: solid 1px $color;
+
+    &:focus {
+      background-color: $color !important;
+    }
+
+    &:hover {
+      background: $color !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+@each $colorname,
+$color in $colors {
+  .bg-#{$colorname} {
+    background-color: $color !important;
+  }
+}
